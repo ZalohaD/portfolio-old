@@ -1,0 +1,490 @@
+html,
+body {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    font-family: "Neue Montreal";
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+.logo {
+    position: fixed;
+    font-family: Poppins;
+    line-height: 80px;
+    margin-left: 5em;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 1;
+    top: 4px;
+}
+
+.logo .iconify {
+    color: #6adb9d;
+    margin-right: 7px;
+    position: relative;
+    z-index: 1;
+    top: 3px;
+}
+
+.contact {
+    position: fixed;
+    color: rgb(124, 124, 124);
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-family: Poppins;
+    right: 80px;
+    line-height: 80px;
+    z-index: 1;
+}
+
+.button {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    text-decoration: none;
+    color: white;
+    right: 100px;
+    font-family: 'Monument';
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    transform: translateX(-100%);
+    z-index: 200;
+    overflow: hidden;
+}
+
+.menu .button {
+    color: white;
+}
+
+.ul {
+    position: absolute;
+    left: 20%;
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    align-items: left;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.ul li {
+    margin: 20px 0;
+    z-index: 2;
+}
+
+.ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 2s;
+    font-family: 'Monument';
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+    mix-blend-mode: difference;
+}
+
+.social {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    height: 80px;
+    width: 100%;
+}
+
+.social ul {
+    margin-left: 50px;
+    display: flex;
+}
+
+.social ul li {
+    margin: 0px 10px;
+}
+
+.social ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Monument';
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.li1:hover,
+.li2:hover,
+.li3:hover,
+.li4:hover {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: 1s ease-in-out;
+}
+
+.ul li a:hover {
+    transition: 2s;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
+    font-style: italic;
+}
+
+.header {
+    position: absolute;
+    top: 46%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.ml7 {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.7em;
+}
+
+.ml7 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+
+.ml7 .letter {
+    transform-origin: 0 100%;
+    display: inline-block;
+    line-height: 1em;
+}
+
+h1 {
+    color: #fff;
+    font-family: "Roboto";
+    font-weight: bolder !important;
+    font-size: 46px !important;
+    margin-bottom: 0px;
+    text-transform: uppercase !important;
+}
+
+#tagline {
+    width: 640px;
+}
+
+p {
+    color: rgb(95, 95, 95);
+    font-weight: 400;
+    font-family: "Roboto";
+    line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.buttons {
+    margin-top: 40px;
+}
+
+button {
+    margin-right: 10px !important;
+    padding: 14px 30px;
+    border: none;
+    color: #fff;
+    font-size: 12px !important;
+    letter-spacing: 4px;
+    font-weight: 300;
+}
+
+#one {
+    background: linear-gradient(135deg, rgb(106, 219, 157) 0%, rgb(23, 167, 88) 100%);
+}
+
+#one a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.media {
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+    right: 6%
+}
+
+.media ul {
+    position: absolute;
+    list-style: none;
+}
+
+.media ul li {
+    color: grey;
+    padding: 12px 0;
+    display: inline-block !important;
+}
+
+.bottom-text {
+    position: absolute;
+    z-index: 1;
+    color: grey;
+    font-size: 18px;
+    font-family: monospace;
+    margin-left: 2em;
+    bottom: 40px;
+}
+
+.copyright {
+    position: absolute;
+    z-index: 1;
+    color: grey;
+    font-size: 15px;
+    right: 0;
+    font-family: Roboto;
+    font-weight: 100;
+    margin-right: 2em;
+    bottom: 40px;
+}
+
+.ring {
+    margin: 0%;
+    padding: 0%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 2;
+    width: 40vw;
+    opacity: 0.7;
+}
+
+.gif {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    height: 500px;
+    width: 500px;
+    z-index: 20;
+    background: url(https://media.giphy.com/media/3o7WIGfY7HKTaFdip2/giphy.gif) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+#js-scroll {
+    height: 200%;
+}
+
+.about__container {
+    width: 50%;
+    margin: 180px 0 100px 100px;
+    padding: 40px;
+}
+
+.about__container p {
+    margin: 60px 0;
+    color: #fff;
+    font-size: 46px;
+    font-weight: 400;
+    z-index: 2;
+    line-height: 120%;
+}
+
+.about__container p span {
+    font-family: "GrandSlang Roman";
+}
+
+.about__container-contact-link a {
+    color: #fff;
+}
+
+p.about__container-link {
+    font-size: 26px;
+}
+
+.about__container-link a {
+    color: #fff;
+    font-size: 26px;
+}
+
+.cursor-follow {
+    position: absolute;
+    background: url(../assets/cursor.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    z-index: 2;
+    user-select: none;
+    pointer-events: none;
+    transform: translate(5px, 5px);
+}
+
+@media(max-width: 900px) {
+    .about__container {
+        width: 70%;
+        margin: 140px 0 60px 40px;
+    }
+    .cursor-follow {
+        display: none;
+    }
+}
+
+.container {
+    margin-top: 200px;
+    margin-left: 200px;
+}
+
+.container__item {
+    position: relative;
+    width: 700px;
+    height: 440px;
+    margin: 50px 500px 20px 80px;
+}
+
+.container__item-header h1 {
+    position: relative;
+    top: 100px;
+    left: 0;
+    right: 0;
+    width: 600px;
+    height: 360px;
+    font-size: 70px !important;
+}
+
+.container__item h1 {
+    position: absolute;
+    left: 10px;
+    bottom: -70px;
+    color: #fff;
+    font-family: "GrandSlang Roman";
+    font-weight: lighter;
+    font-size: 64px;
+}
+
+.container__item-title a {
+    color: #fff;
+    text-decoration: none;
+    mix-blend-mode: difference;
+}
+
+.container__item-1 {
+    background: url(../assets/img-one.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.container__item-2 {
+    background: url(../assets/img-two.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.container__item-3 {
+    background: url(../assets/img-three.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.container__item-4 {
+    background: url(../assets/img-four.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.container__item-5 {
+    background: url(../images/img-five.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+@media(max-width: 900px) {
+    .container__item {
+        width: 500px;
+        height: 300px;
+        margin: 50px 100px 20px 80px;
+    }
+    .container__item-header h1 {
+        font-size: 60px !important;
+        left: -50%;
+    }
+    .container__item h1 {
+        font-size: 40px;
+        bottom: -60px;
+    }
+    .gif {
+        display: none;
+    }
+    .header,
+    p,
+    button,
+    h1,
+    #tagline {
+        margin-left: 3em;
+    }
+    .media {
+        margin-right: 3.2em;
+        top: 30%;
+    }
+    .buttons,
+    #one {
+        margin-left: 2em;
+    }
+    .bottom-text,
+    .copyright {
+        margin-left: 4em;
+        top: 100%;
+    }
+    .media,
+    ul,
+    li {
+        padding: 20px;
+        padding-left: 100px;
+    }
+    .button {
+        top: 30px;
+        right: 40px;
+    }
+}
+
+@media(max-width: 650px) {
+    body {
+        overflow: hidden;
+    }
+    .gif {
+        display: none;
+    }
+    .buttons {
+        margin-left: 10rem;
+    }
+    #tagline {
+        font-size: 15px;
+        margin-left: 10rem;
+        padding: 2px;
+        overflow-wrap: break-word;
+    }
+    .letters {
+        margin-left: 5rem;
+    }
+    .logo {
+        left: 2em;
+        margin: 0;
+    }
+    .bottom-text,
+    .copyright {
+        margin-left: 3em;
+        top: 90%;
+    }
+    .media,
+    ul,
+    li {
+        padding: 20px;
+        padding-left: 80px;
+    }
+}

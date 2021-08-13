@@ -1,0 +1,534 @@
+/*--------------- basic styling --------------- */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto Mono" !important;
+    background: #0f0f0f !important;
+    color: #fff !important;
+}
+
+.whitespace {
+    width: 100%;
+    height: 100px;
+}
+
+@media(max-width: 768px) {
+    .whitespace {
+        display: none;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+
+/*--------------- navigation --------------- */
+
+.logo {
+    position: absolute;
+    font-family: Poppins;
+    line-height: 80px;
+    margin-left: 5em;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.logo .iconify {
+    color: #6adb9d;
+    margin-right: 7px;
+    position: relative;
+    z-index: 1;
+}
+
+.contact {
+    position: fixed;
+    color: rgb(124, 124, 124);
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-family: Poppins;
+    right: 80px;
+    line-height: 80px;
+    z-index: 1;
+}
+
+.button {
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    text-decoration: none;
+    color: white;
+    right: 100px;
+    font-family: 'Monument';
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    transform: translateX(-100%);
+    z-index: 200;
+    overflow: hidden;
+}
+
+.menu .button {
+    color: white;
+}
+
+.ul {
+    position: absolute;
+    left: 20%;
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    align-items: left;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.ul li {
+    margin: 20px 0;
+    z-index: 2;
+    list-style-type: none;
+}
+
+.ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 2s;
+    font-family: 'Monument';
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+    mix-blend-mode: difference;
+}
+
+.social {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    height: 80px;
+    width: 100%;
+}
+
+.social ul {
+    margin-left: 50px;
+    display: flex;
+}
+
+.social ul li {
+    margin: 0px 10px;
+    list-style-type: none;
+}
+
+.social ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Monument';
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.li1:hover,
+.li2:hover,
+.li3:hover,
+.li4:hover {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: 1s ease-in-out;
+}
+
+.ul li a:hover {
+    transition: 2s;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
+    font-style: italic;
+}
+
+
+/*--------------- hero section --------------- */
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: -2px;
+    line-height: 58px;
+}
+
+@media(max-width: 768px) {
+    .header h1 {
+        font-size: 26px;
+    }
+}
+
+
+/*--------------- scroll down icon animation --------------- */
+
+
+/*--------------- projects section --------------- */
+
+.container {
+    padding: 0;
+    margin: 0;
+}
+
+h6 {
+    text-align: center;
+}
+
+.vertical {
+    margin-top: 40px;
+    border-left: 1px solid #fff;
+    height: 80px;
+    position: absolute;
+}
+
+.project {
+    height: 458px;
+}
+
+.project1 {
+    background: url(https://images.unsplash.com/photo-1540349220179-09d3866f2e74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2600&q=80) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.project1::after {
+    content: "timeless flow.";
+    font-family: "Roboto Mono";
+    font-size: 36px;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 8%;
+    left: -60%;
+    right: 0;
+    bottom: 0;
+}
+
+.project2 {
+    background: url(https://images.unsplash.com/photo-1468870045442-e7d799d8c98a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2448&q=80) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.project2::after {
+    content: "foretime.";
+    font-family: "Roboto Mono";
+    font-size: 36px;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 80%;
+    left: 90%;
+    right: 0;
+    bottom: 0;
+}
+
+@media(max-width: 768px) {
+    .project {
+        width: 90% !important;
+        margin: 14px auto;
+    }
+    .vertical {
+        display: none;
+    }
+    .project1::after,
+    .project2::after,
+    .project3::after,
+    .project4::after {
+        display: none;
+    }
+}
+
+
+/*--------------- footer section --------------- */
+
+.collab {
+    text-align: right;
+}
+
+.collab p {
+    font-weight: lighter !important;
+    margin-bottom: 20px;
+}
+
+.hr {
+    background: rgba(255, 255, 255, 0.2);
+    height: 1px;
+}
+
+.info h4 {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.info p {
+    color: grey;
+    font-weight: lighter;
+}
+
+.info li {
+    font-weight: lighter;
+    color: #fff;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+#tg::before {
+    display: inline-block;
+    content: '';
+    border-radius: 100%;
+    height: 4px;
+    width: 4px;
+    margin-right: 6px;
+    background: #3b5998;
+}
+
+#ig::before {
+    display: inline-block;
+    content: '';
+    border-radius: 100%;
+    height: 4px;
+    width: 4px;
+    margin-right: 6px;
+    background: #fcaf45;
+}
+
+#git::before {
+    display: inline-block;
+    content: '';
+    border-radius: 100%;
+    height: 4px;
+    width: 4px;
+    margin-right: 6px;
+    background: #55acee;
+}
+
+#li::before {
+    display: inline-block;
+    content: '';
+    border-radius: 100%;
+    height: 4px;
+    width: 4px;
+    margin-right: 6px;
+    background: #1916c5;
+}
+
+#media,
+#address {
+    text-align: right;
+}
+
+#media ul {
+    list-style: none;
+}
+
+#media ul li {
+    display: inline-block;
+}
+
+@media(max-width: 768px) {
+    .collab,
+    #personal,
+    #media,
+    #address {
+        text-align: center;
+    }
+    .info ul {
+        margin: 0 0 0 -22px;
+        padding: 0;
+    }
+}
+
+
+/*--------------- work page --------------- */
+
+.hero-content {
+    margin-left: 0%;
+}
+
+.hero-content p {
+    font-weight: 300;
+    line-height: 36px;
+    color: grey;
+}
+
+.hero-content h6 {
+    text-align: left;
+}
+
+@media(max-width: 768px) {
+    .hero-content {
+        padding-top: 50px;
+        width: 96%;
+        margin: 0 auto;
+    }
+}
+
+
+/*---------------about page --------------- */
+
+.about {
+    height: 500px;
+    margin-top: 12px;
+}
+
+.project-img {
+    display: flex;
+}
+
+.image {
+    background: url(../assets/arita-main.jpg) no-repeat 50% 70%;
+}
+
+.image2 {
+    background: url(../assets/arita-second.jpg) no-repeat 50% 70%;
+}
+
+.image3 {
+    background: url(../assets/portfolio-main.jpg) no-repeat;
+}
+
+.image4 {
+    background: url(../assets/portfolio-second.png) no-repeat 50% 70%;
+}
+
+.image5 {
+    background: url(../assets/mozaic-main.jpg) no-repeat;
+}
+
+.image6 {
+    background: url(../assets/mozaic-second.jpg) no-repeat 40% 10%;
+}
+
+.image7 {
+    background: url(../assets/shoes-main.jpg) no-repeat;
+}
+
+.image8 {
+    background: url(../assets/shoes-second.jpg) no-repeat;
+}
+
+.image9 {
+    background: url(../assets/shoes-main.jpg) no-repeat;
+}
+
+.image10 {
+    background: url(../assets/shoes-second.jpg) no-repeat;
+}
+
+
+/*--------------- project page --------------- */
+
+.prev a,
+.next a {
+    color: grey;
+}
+
+.prev {
+    text-align: left;
+}
+
+.next {
+    text-align: right;
+}
+
+.prev a:hover,
+.next a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+#contact-form {
+    margin: 5% 1.4%;
+}
+
+#contact-form ul {
+    list-style: none;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+#contact-form li {
+    padding: 10px;
+}
+
+#contact-form li:last-of-type {
+    border-bottom: none;
+}
+
+#contact-form label {
+    display: block;
+    font-size: .8em;
+    color: #999;
+    padding-left: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    resize: vertical;
+    background: transparent;
+    color: #fff;
+    font-weight: bolder;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+textarea:focus {
+    outline: none;
+    border: none;
+}
+
+.textarea {
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.send {
+    margin-left: 50px;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    background: transparent;
+    color: #dfdfdf;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.send:hover {
+    background: #dfdfdf;
+    color: #101010;
+}
+
+@media(max-width: 768px) {
+    #contact-form {
+        margin: 5% -8%;
+        width: 98%;
+    }
+}
