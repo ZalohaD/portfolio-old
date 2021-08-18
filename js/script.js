@@ -72,11 +72,11 @@ TweenMax.from("#one", 3, {
 
 var t1 = new TimelineMax();
 
-tl.from(".gif", {
+t1.from(".gif", 2, {
     y: "-100%",
     opacity: 0,
     duration: 1
-})
+});
 var textWrapper = document.querySelector('.ml7 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
 
