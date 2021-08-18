@@ -514,8 +514,16 @@ p.about__container-link {
         margin-left: 3em;
         top: 90%;
     }
+    .ul {
+        position: absolute;
+        left: 20%;
+        display: flex;
+        justify-content: flex-start;
+    }
     ul.ul {
+        margin-top: 10em !important;
         padding: 0;
+        margin: 0;
         margin-left: 0 !important;
     }
     li.social-li {
@@ -526,6 +534,7 @@ p.about__container-link {
     .social,
     ul,
     li {
+        margin-bottom: 50px;
         margin-left: 12px !important;
         padding: 0;
     }
