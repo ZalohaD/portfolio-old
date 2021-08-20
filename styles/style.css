@@ -232,7 +232,7 @@ button {
     list-style: none;
 }
 
-.media ul li {
+.media ul li a {
     color: grey;
     padding: 12px 0;
     display: inline-block !important;
@@ -258,18 +258,6 @@ button {
     font-weight: 100;
     margin-right: 2em;
     bottom: 40px;
-}
-
-.ring {
-    margin: 0%;
-    padding: 0%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    z-index: 2;
-    width: 40vw;
-    opacity: 0.7;
 }
 
 .gif {
@@ -534,7 +522,7 @@ p.about__container-link {
     .social,
     ul,
     li {
-        margin-bottom: 900px;
+        margin-bottom: 110px;
         margin-left: 12px !important;
         padding: 0;
     }
