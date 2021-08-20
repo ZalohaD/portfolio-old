@@ -532,3 +532,34 @@ textarea:focus {
         width: 98%;
     }
 }
+
+@media (max-width: 375px) {
+    .logo {
+        margin-left: 20px;
+    }
+    .button {
+        margin-left: auto;
+        margin-right: 0;
+        top: 22px;
+        right: 30px;
+    }
+    .ul {
+        position: absolute;
+        left: 20%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    ul.ul {
+        margin-top: 10em !important;
+        padding: 0;
+        margin: 0;
+        margin-left: 0 !important;
+    }
+    .social,
+    ul,
+    li {
+        margin-bottom: 15px;
+        margin-left: 12px !important;
+        padding: 0;
+    }
+}
