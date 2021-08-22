@@ -523,7 +523,10 @@
  
  @media (max-width: 375px) {
      .cursor-outer,
-     cursor-inner {
+     .cursor-inner {
+         display: none;
+     }
+     cursors-follow {
          display: none;
      }
      .media {
