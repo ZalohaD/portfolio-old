@@ -428,6 +428,9 @@
  }
  
  @media(max-width: 900px) {
+     .cursor {
+         display: none;
+     }
      .container__item {
          width: 500px;
          height: 300px;
@@ -477,6 +480,9 @@
  }
  
  @media(max-width: 650px) {
+     .cursor {
+         display: none;
+     }
      .gif {
          display: none;
      }
@@ -510,6 +516,9 @@
  }
  
  @media (max-width: 375px) {
+     .cursor {
+         display: none;
+     }
      .media {
          position: absolute;
          top: 50%;

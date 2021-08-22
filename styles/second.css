@@ -568,6 +568,9 @@ textarea:focus {
 }
 
 @media (max-width: 375px) {
+    .cursor {
+        display: none;
+    }
     .logo {
         margin-left: 20px;
     }
