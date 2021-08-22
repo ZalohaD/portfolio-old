@@ -56,7 +56,7 @@
 
         </div>
 
-        <div class="cursor-follow"></div>
+        <div class="cursors-follow"></div>
     </div>
     <script src="../libs/gsap.min.js"></script>
     <script>
@@ -69,12 +69,12 @@
         });
 
         // div following mouse 
-        TweenMax.from(".cursor-follow", 2, {
+        TweenMax.from(".cursors-follow", 2, {
             delay: 1,
             opacity: 0
         });
 
-        follower = document.querySelector('.cursor-follow');
+        follower = document.querySelector('.cursors-follow');
 
         posX = 0;
         posY = 0;
