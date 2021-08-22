@@ -431,6 +431,9 @@
      .cursor {
          display: none;
      }
+     .cursor-follow {
+         display: none;
+     }
      .container__item {
          width: 500px;
          height: 300px;
@@ -480,6 +483,9 @@
  }
  
  @media(max-width: 650px) {
+     cursors-follow {
+         display: none;
+     }
      .cursor {
          display: none;
      }
@@ -516,7 +522,8 @@
  }
  
  @media (max-width: 375px) {
-     .cursor {
+     .cursor-outer,
+     cursor-inner {
          display: none;
      }
      .media {
