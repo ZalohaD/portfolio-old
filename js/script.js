@@ -12,19 +12,7 @@ TweenMax.from(".button", 3, {
     ease: Expo.easeInOut
 });
 
-TweenMax.from(".contact", 3, {
-    delay: .5,
-    opacity: 0,
-    y: 20,
-    ease: Expo.easeInOut
-});
 
-TweenMax.from(".options", 3, {
-    delay: .4,
-    opacity: 0,
-    y: 20,
-    ease: Expo.easeInOut
-});
 
 TweenMax.from(".bottom-text", 3, {
     delay: .7,
