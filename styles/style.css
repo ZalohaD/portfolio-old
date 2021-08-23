@@ -332,6 +332,10 @@
      color: #fff;
  }
  
+ .about__container-cv-link a {
+     color: #fff;
+ }
+ 
  p.about__container-link {
      font-size: 26px;
  }
